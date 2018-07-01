@@ -18,7 +18,7 @@
  ```
  
  **Файлы:** task1.h, task1.cpp, main1.cpp
- 
+( 
  **Задача №2**
 
 ```
@@ -82,7 +82,7 @@
 **Состав проекта**
 
 ```
-  - void split(char **result, int *N, char *buf, char ch) - разбиение строки buf на подстроки и запись 
+  - void split(char ***result, int *N, char *buf, char ch) - разбиение строки buf на подстроки и запись 
     результата в result, с присвоением по адресу N количества полученных подстрок.
   - main()
 ```
