@@ -1,5 +1,6 @@
 
-![RED](img/red.png)
+
+<img src="img/red.png" width="50" height="50">
 
 # Cpp-lab-1
 
