@@ -14,8 +14,11 @@ void split(char ***result, int *N, char *buf, char ch)
 			count++;
 		if (*(N + 1) > size)
 			tmp = resize_arr(tmp, size, size * 2);
-		*(tmp + *N) = new char[count - start + 1]{ 0 };
-		strncpy(tmp[(*N)++], buf+start, count - start);
+		if (count != 0)
+		{
+			*(tmp + *N) = new char[count - start + 1]{ 0 };
+			strncpy(tmp[(*N)++], buf+start, count - start);
+		}
 		while (buf[count] == ch)
 			count++;
 		start = count;
